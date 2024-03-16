@@ -17,7 +17,7 @@ class Graph:
             self.nodes[neighbor].append(node)
 
 
-def bfs(graph, start, goal=None):
+def bfs(graph, start, goal=None): # Breath-First Search
     visited = set()
     queue = [(start, [start])]
 
@@ -57,4 +57,3 @@ if __name__ == '__main__':
 
     print("BFS starting from node A:")
     print(bfs(graph, "A", "I"))
-
